@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-atlas = "";
+atlas = "mongodb://localhost:27017";
 
 mongoose.Promise = global.Promise;
 
