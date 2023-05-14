@@ -1,14 +1,15 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-atlas = "mongodb+srv://appu:appu@cluster0.vokno7s.mongodb.net/?retryWrites=true&w=majority"
+atlas = "";
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(atlas,{
+mongoose
+  .connect(atlas, {
     useNewUrlParser: true,
-    useUnifiedTopology:true
-})
-.then(()=>{
-    console.log("mongodb connected")
-})
-.catch((e)=>console.log(e.mssage))
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("mongodb connected");
+  })
+  .catch((e) => console.log(e.mssage));
